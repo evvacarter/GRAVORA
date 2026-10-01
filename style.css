@@ -85,3 +85,51 @@ text-decoration:none;
     height:200px;
     width:200px
 }
+.page3{
+    position:relative;
+    min-height:100vh;
+    background:radial-gradient(circle at 90% 55%, rgba(102,35,190,0.45),
+    transparent 35%),
+    radial-gradient(circle at 10% 85%, rgba(72,25,150,0.45),
+    transparent 30%),
+    linear-gradient(180deg,#05051b 0%,#080821 50%,#030313 100%);
+    color:#f4f2ff;
+}
+.info-cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+.cards3{
+    border: 2px solid beige;
+    border-radius:20px;
+    height:400px;
+    width:400px;
+    margin:50px
+
+}
+.bh-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    display:block;
+    margin-top: 0px;
+    padding:0px;
+}
+.onetext{
+    padding:10px;
+margin-bottom:0px;
+    font-size:15px;
+    text-align:center;
+}
+.secondtext{
+    padding:10px;
+    margin-bottom:0px;
+    font-size:15px;
+    text-align:center;
+}
+.thirdtext{
+    padding:10px;
+    font-size:15px;
+    text-align:center;
+}
