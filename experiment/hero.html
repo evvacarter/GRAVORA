@@ -1,16 +1,35 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>new black whole </title>
+    <title>Scrollable Website with Black Hole</title>
     <link rel="stylesheet" href="blackhole.css">
 </head>
 <body>
-    // guys idhr se apna canvas tag start hoga 
-    // hero section 
-    <section class="hero-section" id="heroWrapper"></section>
-    <canvas id="bhcanvas" role="img" arial-lable="ASCII BLACKHOLE ANIMATION"></canvas>
-// 
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="heroWrapper">
+        <canvas id="bhCanvas" role="img" aria-label="ASCII Black Hole Animation"></canvas>
+        
+        <!-- Yahan aap apne hero section ka text/buttons daal sakte hain -->
+        <div class="hero-content">
+            <h1>BLACK HOLE </h1>
+            <p>welcome to the GRAVOA</p>
+        </div>
+    </section>
+
+    <!-- Niche ke sections (Scrolling test karne ke liye) -->
+    <section class="other-sections">
+        <h2>About Me</h2>
+        <p>Yahan aapka dusra section aayega...</p>
+    </section>
+    
+    <section class="other-sections">
+        <h2>My Projects</h2>
+        <p>Yahan aapke projects ki list aayegi...</p>
+    </section>
+
+    <script src="blackhole.js"></script>
 </body>
 </html>
