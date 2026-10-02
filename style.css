@@ -70,8 +70,8 @@
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:30px;
-    margin-top:40px;
-    padding:0 20px;
+    width: min(1100px, 90%);
+    margin: 40px auto 0;
 }
 .glass-card{
     background:rgba(255,255,255,0.05);
@@ -80,10 +80,14 @@
     border:1px solid rgba(255, 255, 255, 0.15);
     box-shadow:0 4px 30px rgba(0, 0, 0, 0.3);
     border-radius:16px;
-    padding:24px;
+    padding:30px;
     color:#ffffff;
-    height:200px;
-    width:200px
+    height:260px;
+    width:100%;
+}
+.page3 > h2,
+.page3 > h1 {
+    text-align: center;
 }
 .page3{
     position:relative;
@@ -97,82 +101,262 @@
 }
 .info-cards{
     display:grid;
-    grid-template-columns:repeat(auto_fit, minmax(350px, 1fr));
-    gap:22px;
+    grid-template-columns:repeat(3, 400px);
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:28px;
+    padding:50px;
+    align-items: flex-start;
 }
 .cards3{
     border: 2px solid beige;
     border-radius:20px;
     height:400px;
-    width:100%;
-    
-
+    width:400px;
+    overflow: hidden;
 }
 .bh-card img{
     width:100%;
-    height:250px;
+    height:210px;
     object-fit:cover;
     display:block;
     margin-top: 0px;
     padding:0px;
 }
 .onetext{
-    padding:10px;
-margin-bottom:0px;
-    font-size:15px;
-    text-align:center;
-}
-.secondtext{
-    padding:10px;
+    padding:15px;
     margin-bottom:0px;
     font-size:15px;
     text-align:center;
+    color:#f4f2ff
 }
-.thirdtext{
-    padding:10px;
+.secondtext{
+    padding:15px;
+    margin-bottom:0px;
     font-size:15px;
     text-align:center;
+    color:#f4f2ff
+}
+.thirdtext{
+    padding:15px;
+    font-size:15px;
+    text-align:center;
+    color:#f4f2ff
+}
+.onetext h2,.secondtext h2,.thirdtext h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+.onetext p,.secondtext p,.thirdtext p {
+    font-size: 15px;
+    line-height: 1.4;
 }
 .lasttext{
     text-align:center;
 }
 .fourthpage{
-    
     position:relative;
     min-height:100vh;
-    background:radial-gradient(circle at 90% 55%, rgba(102,35,190,0.45),
-    transparent 35%),
-    radial-gradient(circle at 10% 85%, rgba(72,25,150,0.45),
-    transparent 30%),
-    linear-gradient(180deg,#05051b 0%,#080821 50%,#030313 100%);
+    padding: 50px 6% 40px;
+    background:
+      radial-gradient(
+        circle at 90% 55%, 
+        rgba(102,35,190,0.45),
+        transparent 35%
+ ),
+    radial-gradient(
+       circle at 10% 85%,
+     rgba(72,25,150,0.45),
+       transparent 30%
+       ),
+    linear-gradient(
+        180deg,
+        #05051b 0%,
+        #080821 50%,
+        #030313 100%
+        );
     color:#f4f2ff;
 }
+/* top heading guys starttext wala */
+.starttext{
+    text-align: left;
+    margin-bottom: 5px;
+}
+.starttext h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.starttext h1 {
+    font-size: 48px;
+    margin: 0;
+}
+/* twist wali line guys hara pr h */
+.LINES h3 {
+    font-size: 20px;
+    line-height: 1.5;
+}
+/* image and text wala container jo nya div bana h */
+.question-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* black hole wali image */
 .blackholeimg{
-    display:flex;
-    justify-content:left;
-    margin-top:30px;
-    border:2px white solid;
-    height:300px;
-    width:300px;
-    border-radius:15px;
+    width: 100%;
+    max-width: 500px;
+    height: 380px;
+    margin: 0;
+    border: 2px solid white;
+    overflow: hidden
+}
+.blackholeimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 .TEXT{
-   margin-left:auto;
-   width:45%;
-   transform:translateY(-270px);
+   margin: 0;
+   width:100%;
+   transform: none
 
 }
+.TEXT h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.TEXT h1 {
+    font-size: 42px;
+    line-height: 1.05;
+    margin-bottom: 15px
+}
+.TEXT p {
+    font-size: 17px;
+    line-height: 1.5;
+}
 .box{
-    border:2px solid white;
-    height:px;
-    width:550px;
-    border-radius:15px;
-    padding:1px;
-    margin:50px;
-    margin-top:0px
-
+    width: min(900px, 100%);
+    min-height: 220px;
+    margin: 55px auto 0;
+    border: 2px solid rgba(255,255,255,0.25);
+    border-radius: 15px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    column-gap: 30px;
+    align-items: center;
+}
+.box > i {
+    font-size: 25px;
+    grid-column: 1 / -1;
+}
+.box > p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.box h2 {
+    font-size: 25px;
+    margin: 0;
+}
+.monster {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+}
+.monster img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.paragraph {
+    grid-column: 1;
+}
+.paragrapgh P {
+    font-size: 16px;
+    line-height: 1.5;
 }
 .bottomtext{
     text-align:center;
     font-size:20px;
+}
+@media (max-width: 125px){
+    .info-cards {
+         grid-template-columns:1fr;
+         justify-items:center;
+         padding:30px 20px;
+    }
+     
+}
+@media (max-width: 900){
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px){
+    .cards-grid {
+        grid-template-columns: 1fr;
+        width: 90%
+    }
+    .glass-card {
+        min-height: 240px;
+        padding: 25px;
+    }
+}
+@media (max-width: 800px){
+    .forthpage {
+        padding: 35px 20px;
+    }
+    .starttext h2 {
+        font-size: 20px;
+    }
+    .starttext h1 {
+        font-size: 17px;
+    }
+    .LINES h3 {
+        font-size: 17px;
+    }
+    .question-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .blackholeimg {
+        width: 100%;
+        height: 330px;
+        max-width: none;
+    }
+    .TEXT h3 {
+        font-size: 20px;
+    }
+
+    .TEXT h1 {
+        font-size: 35px;
+    }
+
+    .TEXT p {
+        font-size: 16px;
+    }
+    .box {
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+        padding: 20px;
+    }
+    .monster {
+        grid-column: auto;
+        grid-row: auto;
+        margin-top: 20px;
+    }
+    .monster img {
+        width: 150px;
+        height: 150px;
+    }
+    .paragrapgh {
+        grid-column: auto;
+    }
+    .bottomtext {
+        margin-top: 35px;
+    }
 }
